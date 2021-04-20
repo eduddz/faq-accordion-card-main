@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    font-family: 'Kumbh Sans', sans-serif;
+    color: hsl(238, 29%, 16%);
+}
+
+section {
+    width: 350px;
+    margin: 50px auto;
+}
+
+.desktop {
+    display: none;
+}
+
+header img {
+    width: 250px;
+    margin: 0 50px -100px;
+}
+
+header img:first-child {
+    margin-left: 40px;
+}
+
+.content {
+    background-color: hsl(240, 5%, 91%);
+    padding: 10rem 2rem 5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.33);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 36px;
+}
+
+h2 {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+p {
+    font-size: 12px;
+    color: hsl(237, 12%, 33%);
+}
+
+.content > div {
+    padding-bottom: .5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 1440px) {
+    
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        position: relative;
+        top: 500px;
+        left: -500px;
+    }
+
+    section {
+        width: 1000px;
+        display: flex;
+        background-color: hsl(240, 5%, 91%);
+        align-items: center;
+        border-radius: 20px;
+        margin-top: -60rem;
+    }
+
+    header, .content {
+        width: 500px;
+    }
+
+    .content {
+        border-radius: 0;
+        box-shadow: none;
+        margin: 0 5rem 0 0;
+        padding: 6rem 1rem;
+    }
+
+    .content > div {
+        padding-bottom: .5rem;
+    }
+
+    h2:hover {
+        color: hsl(14, 88%, 65%);
+        cursor: pointer;
+    }
+
+    .desktop {
+        width: 500px;
+        position: relative;
+        left: -400px;
+        top: -350px;
+    }
+
+    .meio {
+        position: relative;
+        bottom: -350px;
+        left: -50px;
+    }
+
+    .desktop img:first-child {
+        position: relative;
+        top: 680px;
+        left: -40px;
+        z-index: 10;
+        width: 150px;
+    }
+    
+}
