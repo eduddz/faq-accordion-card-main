@@ -5,16 +5,19 @@
 }
 
 body {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background: linear-gradient(180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
     font-family: 'Kumbh Sans', sans-serif;
     color: hsl(238, 29%, 16%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 section {
     width: 350px;
-    margin: 50px auto;
 }
 
 .desktop {
@@ -32,7 +35,7 @@ header img:first-child {
 
 .content {
     background-color: hsl(240, 5%, 91%);
-    padding: 10rem 2rem 5rem;
+    padding: 8rem 2rem 5rem;
     border-radius: 20px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.33);
 }
@@ -66,12 +69,13 @@ p {
     border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 
-@media (min-width: 1440px) {
+i {
+    padding-left: 5px;
+}
+
+@media screen and (min-width: 1440px) {
     
     body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
     }
 
@@ -82,30 +86,27 @@ p {
     .desktop {
         display: flex;
         flex-direction: column;
-        width: 100px;
-        position: relative;
-        top: 500px;
-        left: -500px;
     }
 
     section {
-        width: 1000px;
-        display: flex;
+        width: 750px;
         background-color: hsl(240, 5%, 91%);
+        display: flex;
         align-items: center;
+        justify-content: center;
         border-radius: 20px;
         margin-top: -60rem;
     }
 
     header, .content {
-        width: 500px;
+        width: 350px;
     }
 
     .content {
         border-radius: 0;
         box-shadow: none;
-        margin: 0 5rem 0 0;
-        padding: 6rem 1rem;
+        padding: 6rem 0 6rem 0;
+        border-radius: 20px;
     }
 
     .content > div {
@@ -127,13 +128,13 @@ p {
     .meio {
         position: relative;
         bottom: -350px;
-        left: -50px;
+        left: 100px;
     }
 
     .desktop img:first-child {
         position: relative;
         top: 680px;
-        left: -40px;
+        left: 100px;
         z-index: 10;
         width: 150px;
     }
